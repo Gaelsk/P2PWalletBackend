@@ -27,7 +27,7 @@ This is a simple P2P wallet system that allows users to credit their wallet usin
 
 #### Provide Authorization Header `Bearer {{TOKEN}}` for the next endpoints
 
-- GET: `/users/me` => to get currrent user data
+- GET: `/users/me` => to get current user data
 - GET: `/users` => to get users lists
 
 - POST: `/wallets` (amount) => to credit wallet
