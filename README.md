@@ -12,22 +12,25 @@ This is a simple P2P wallet system that allows users to credit their wallet usin
 - Run the project locally (`npm run dev`)
 
 ### .env
-DB_NAME: YOUR DATABASE NAME
-DB_HOST: YOUR DATABASE HOST
-DB_DRIVER: YOUR DATABASE DRIVER
-DB_USER: YOUR DATABASE USERNAME
-DB_PASSWORD: YOUR DATABASE PASSWORD
-PAYSTACK_SECRET_KEY: YOUR PAYSTACK SECRET KEY
-SECRET_KEY: YOUR SECRET KEY FOR TOKEN
+- DB_NAME: YOUR DATABASE NAME
+- DB_HOST: YOUR DATABASE HOST
+- DB_DRIVER: YOUR DATABASE DRIVER
+- DB_USER: YOUR DATABASE USERNAME
+- DB_PASSWORD: YOUR DATABASE PASSWORD
+- PAYSTACK_SECRET_KEY: YOUR PAYSTACK SECRET KEY
+- SECRET_KEY: YOUR SECRET KEY FOR TOKEN
 
 ### API Documentation
 
-- POST: /users/register (name, email, password)
-- POST: /users/login (email, password)
-- GET: /users/me (Provide Authorization Header `Bearer {{TOKEN}}`
-- GET: /users
+- POST: `/users/register` (name, email, password)
+- POST: `/users/login` (email, password)
 
-- POST: /wallets (amount)
-- POST: /wallets/transfer (toUserId, amount)
+#### Provide Authorization Header `Bearer {{TOKEN}}` for the next endpoints
+
+- GET: `/users/me` => to get currrent user data
+- GET: `/users` => to get users lists
+
+- POST: /wallets (amount) => to credit wallet
+- POST: /wallets/transfer (toUserId, amount) => to transfer funds to another user
 
 #### Note: You can also find a frontend project that shows how this backend service works [HERE](https://github.com/Gaelsk/P2PWalletFrontend).
