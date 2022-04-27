@@ -30,7 +30,7 @@ This is a simple P2P wallet system that allows users to credit their wallet usin
 - GET: `/users/me` => to get currrent user data
 - GET: `/users` => to get users lists
 
-- POST: /wallets (amount) => to credit wallet
-- POST: /wallets/transfer (toUserId, amount) => to transfer funds to another user
+- POST: `/wallets` (amount) => to credit wallet
+- POST: `/wallets/transfer` (toUserId, amount) => to transfer funds to another user
 
 #### Note: You can also find a frontend project that shows how this backend service works [HERE](https://github.com/Gaelsk/P2PWalletFrontend).
